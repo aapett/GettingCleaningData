@@ -52,8 +52,8 @@ stats.all <- data.all %>%
   summarise_at(vars(matches('mean|std')),mean, na.rm = T)
 
 #save data
-write.csv(data.all,'analysis/subject_data.csv', row.names = F)
-write.csv(stats.all,'analysis/subject_stats.csv', row.names = F)
+write.csv(data.all,'analysis/subject_data.txt', row.names = F)
+write.csv(stats.all,'analysis/subject_stats.txt', row.names = F)
 
 
 
